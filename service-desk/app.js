@@ -91,11 +91,10 @@ ticketForm.addEventListener("submit", (event) => {
 searchInput.addEventListener("input", renderTicketList);
 
 clearData.addEventListener("click", () => {
-  localStorage.removeItem(STORAGE_KEY);
-  tickets = [...seedTickets];
-  selectedTicketId = tickets[0].id;
+  tickets = [];
+  selectedTicketId = null;
   saveTickets();
-  showToast("Base local restaurada.");
+  showToast("Base local limpa.");
   render();
 });
 
@@ -118,6 +117,8 @@ function saveTickets() {
 }
 
 function nextId() {
+  if (tickets.length === 0) return 1001;
+
   return Math.max(...tickets.map((ticket) => ticket.id)) + 1;
 }
 
