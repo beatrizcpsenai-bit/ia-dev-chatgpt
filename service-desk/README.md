@@ -37,6 +37,4 @@ Também é possível abrir diretamente o arquivo `index.html` com dois cliques.
 3. O botão "Limpar base local" não limpa a lista de chamados; ele restaura os chamados de exemplo. O rótulo e o comportamento entram em conflito.
 4. O histórico geral mostra apenas o estado atual de cada chamado, não a lista completa de eventos de cada chamado. Isso limita a auditoria prometida pela funcionalidade.
 
-## Sugestão didática
 
-Crie um commit inicial com esta versão, depois peça para os alunos corrigirem um bug por commit. Assim eles conseguem praticar mensagens de commit, comparação de versões, histórico e reversão de mudanças.
